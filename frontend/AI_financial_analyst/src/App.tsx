@@ -47,7 +47,7 @@ function App() {
       
       setLoading(true);
       
-      const response = await fetch('http://127.0.0.1:8000/predict', {
+      const response = await fetch('https://ai-financial-risk-analyzer.onrender.com/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -291,7 +291,7 @@ function App() {
           {/* Footer */}
           <div className="text-center mt-12 text-slate-400">
             <p className="text-sm">
-              Ensure your ML API server is running on <code className="bg-white/10 px-2 py-1 rounded text-cyan-400">localhost:8000</code>
+              Ensure your ML API server is running on <code className="bg-white/10 px-2 py-1 rounded text-cyan-400">https://ai-financial-risk-analyzer.onrender.com</code>
             </p>
           </div>
         </div>
